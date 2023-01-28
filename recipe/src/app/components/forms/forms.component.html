@@ -1,0 +1,30 @@
+
+<section>
+    <form [formGroup]="recipeForm" (ngSubmit)="saveRecipe()">
+      <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" formControlName="name">
+      </div>
+      <div>
+          <div>
+              <label for="ingrediens" >Ingrediens</label>
+              <input type="text" id="ingrediens" formControlName="ingrediens">
+              <button type="button">+</button>
+          </div>
+      </div>
+      <div>
+          <label for="imgUrl">Image</label>
+              <input type="text" id="imgUrl" formControlName="imgUrl">
+      </div>
+
+      <div class="col mb-3">
+          <label for="type" class="form-label">Type</label>
+          <select name="" id="type" class="select" formControlName="type">
+              <option value="soup">Levesek</option>
+              <option value="vegetable-dish">Főzelékek</option>
+              <option value="meet">Husok</option>
+          </select>
+      </div>
+      <button>ment</button>
+  </form>
+</section>
