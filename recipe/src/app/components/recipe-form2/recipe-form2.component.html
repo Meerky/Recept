@@ -1,0 +1,71 @@
+
+<section>
+    <form [formGroup]="recipeForm" (ngSubmit)="saveRecipe()">
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" id="name" formControlName="name">
+        </div>
+
+        <div formArrayName="ingrediens">
+            <!-- <button (click)="addIngrediens()" type="button">+ Add new ingrediens</button> -->
+
+            <div *ngFor="let ingrediens of ingrediens.controls ; let i = index">
+
+                <label for="ingrediens-{{i}} ">Ingrediens : </label>
+                
+                        <input type="text" id="ingrediens-{{i}}" [formControlName]="i"> <button
+                            (click)="addIngrediens()" type="button">+ </button>
+                  
+            </div>
+
+        </div>
+
+
+        <div formArrayName="desctription">
+            <!-- <button (click)="addDescription()" type="button">+ Add new descriotion</button> -->
+            <div *ngFor="let description of desctription.controls; let i = index">
+                <label for="desctription-{{i}}">Desctription : </label>
+                <input type="text" id="desctription-{{i}}" [formControlName]="i"> <button (click)="addDescription()"
+                    type="button">+</button>
+            </div>
+        </div>
+
+
+        <div>
+            <label for="imgUrl">Image:</label>
+            <input type="text" id="imgUrl" formControlName="imgUrl">
+        </div>
+
+        <div class="col mb-3">
+            <label for="type" class="form-label ">Type:</label>
+            <select class="select" id="type" formControlName="type">
+                <option value="soup">Levesek</option>
+                <option value="vegetable-dish">Főzelékek</option>
+                <option value="meet">Húsok</option>
+                <option value="cake">Sütemények</option>
+                <option value="bread">Kenyerek</option>
+                <option value="canning">Befőzés</option>
+            </select>
+        </div>
+
+
+
+<div><label for=""> Category:</label>
+        <div class="mb-3 form-check" formArrayName="selectedList"
+            *ngFor="let selected of allSelectedList; let i = index">
+           
+            <input type="checkbox" class="check" id="selectedList" [formControlName]="i">
+            <label class="" for="selectedList">
+                {{selected}}
+
+            </label>
+           
+        </div>
+    </div>
+        <button>Save </button>
+        
+
+    </form>
+</section>
+
+

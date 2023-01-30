@@ -16,3 +16,5 @@ app.component.html -be <app-navbar></app-navbar>
 8. ng g c components/forms
 9.app-routing.motule.ts .be  {path:'form',component:FormsComponent}
 10. app.component.html -be <router-outlet></router-outlet>
+11.appmodule.ts be behuzni imports-ba ReactiveFormsModule,
+import { ReactiveFormsModule } from '@angular/forms';

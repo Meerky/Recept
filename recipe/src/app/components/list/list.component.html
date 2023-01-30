@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>ingrediens</th>
+            <th>description</th>
+            <th>image</th>
+            <th>category</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let recipe of Recipes; let i = index">
+            <td>{{recipe.name}}</td>
+            <td>{{recipe.ingrediens}}</td>
+            <td>{{recipe.desctription}}</td>
+            <td>{{recipe.imgUrl}}</td>
+            <td>{{recipe.type}}</td>
+            <td>{{recipe.selectedList}}</td>
+            <td>
+                <button id="delete-button" (click)="deleteRecipe(recipe.id)">Delete</button>
+                <button (click)="updateRecipes(recipe)">Frissít</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
