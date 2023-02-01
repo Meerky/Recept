@@ -48,5 +48,6 @@ export class ListComponent implements OnInit {
   
   updateRecipes(recipe:any){
   this.router.navigate(['update',recipe.id]);
+  
   }
 }

@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'',component:RecipeForm2Component},
   {path:'forms',component:RecipeForm2Component},
   {path:'list',component:ListComponent},
-  {path:'update',component:UpdateComponent}
+  {path:'update/:id',component:UpdateComponent}
  
  
 

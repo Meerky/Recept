@@ -6,28 +6,35 @@
     
         </div>
 
-        <div formArrayName="ingrediens">
-       
-            <div *ngFor="let ingrediens of ingrediens.controls ; let i = index">
-                <label for="ingrediens-{{i}} ">Ingrediens : </label>
-                <input type="text" id="ingrediens-{{i}}" [formControlName]="i">
-      
+     <div formArrayName="ingrediens">
+        <label for="ingredien ">Ingrediens : </label>
+            <div *ngFor="let ingredien of ingrediens.controls ; let i = index">
+                <!-- <label for="ingredien-{{i}} ">Ingrediens : </label> -->
+                <input type="text" id="ingredien-{{i}}" [formControlName]="i">
+    
                  <button (click)="addIngrediens()"
                     type="button">+ </button>
-            </div>
-        </div>
 
+                 
+            </div>
+             
+        </div>
+    
+             
+    
+       
         <div formArrayName="desctription">
-            
+            <label for="desctription">Desctription : </label>
             <div *ngFor="let description of desctription.controls; let i = index">
-                <label for="desctription-{{i}}">Desctription : </label>
+                <!-- <label for="desctription-{{i}}">Desctription : </label> -->
+                
                 <input type="text" id="desctription-{{i}}" [formControlName]="i">
                  <button (click)="addDescription()"
                     type="button">+</button>
             </div>
         </div>
 
-
+  
         <div>
             <label for="imgUrl">Image:</label>
             <input type="text" id="imgUrl" formControlName="imgUrl">
@@ -51,16 +58,20 @@
             <div class="mb-3 form-check" formArrayName="selectedList"
                 *ngFor="let selected of allSelectedList; let i = index">
 
-                <input type="checkbox" class="check" id="exampleCheck1" [formControlName]="i">
-                <label class="" for="exampleCheck1">
+                <input type="checkbox" class="check" id="check" [formControlName]="i">
+               <label class="" for="check">
                     {{selected}}
 
                 </label>
 
             </div>
         </div>
+
+       
         <button (click)="updateRecipe()" >Mentés </button>
 
 
     </form>
+   
 </section>
+ 

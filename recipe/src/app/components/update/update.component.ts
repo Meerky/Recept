@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormArray, FormControl, FormBuilder, FormGroup } from '@angular/forms';
- 
+
 import { Router, ActivatedRoute } from '@angular/router';
 import { RecipeServiceService } from '../../services/recipe-service.service';
 
@@ -13,15 +13,17 @@ export class UpdateComponent implements OnInit {
 
 
   allSelectedList = ['Diab', 'Traditional', 'Vegan', 'Vegetarian', 'Other'];
- 
-  @Input() recipeForm:any=FormGroup;
+
+  @Input() recipeForm: any = FormGroup;
   @Output() onUpdate: EventEmitter<any> = new EventEmitter();
 
   id: number = 0;
+  Recipes = [];
+
+  selectedRecipe: any;
 
 
-  selectedRecipe:any;
- 
+  reciepe = [];
 
   constructor(
     private http: RecipeServiceService,
@@ -40,15 +42,16 @@ export class UpdateComponent implements OnInit {
       desctription: this.fb.array([
         this.fb.control(''),
       ]),
-     
+
       selectedList: new FormArray([])
     })
+   
   }
 
 
-  get ingrediens() {
-    return this.recipeForm.get('ingrediens') as FormArray;
-  }
+   get ingrediens() {
+     return this.recipeForm.get('ingrediens') as FormArray;
+   }
   get desctription() {
     return this.recipeForm.get('desctription') as FormArray;
   }
@@ -60,33 +63,57 @@ export class UpdateComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+
     this.route.params.subscribe(params => {
       this.id = +params['id'];
 
       this.getRecipe(this.id);
-   
+
     });
     this.createSelectedCheckList();
 
   }
-  getRecipe(id:any) {
+  getRecipe(id: any) {
 
     this.http.getOneRecipe(id).subscribe(
-      (recipe:any) => {
-      
-        this.recipeForm.setValue(recipe);
+      (recipe: any) => {
+
+        console.log(recipe)
+       // this.recipeForm.setValue(recipe);
+
+       // recipe.ingrediens.map((ing: any)=>{this.ingrediens.push(this.fb.control(ing))});
+	   recipe.selectedList
+	   this.recipeForm.patchValue({
+        name: recipe.name,
+        imgUrl: recipe.imgUrl,
+        type: recipe.type,
+        id: recipe.id,
+        selectedList: recipe.selectedList,
+        radio:recipe.radio
+      });
+
+      const ingredientsControls = recipe.ingrediens.map((ingredient:any) => 
+        this.fb.control(ingredient));
+      const ingredientsArray = this.fb.array(ingredientsControls);
+      this.recipeForm.setControl('ingrediens', ingredientsArray);
+
+      const descriptionControls = recipe.desctription.map((desc:any) => 
+        this.fb.control(desc));
+      const descriptionArray = this.fb.array(descriptionControls);
+      this.recipeForm.setControl('desctription', descriptionArray);
+       
       },
-    (err) => console.log(err)
+      (err) => console.log(err)
     )
   }
 
+
   updateRecipe() {
     this.saveRecipe();
-    
-   
-    this.router.navigate(['recipe-list'])
-    
+
+
+    this.router.navigate(['list'])
+
   }
 
   saveRecipe() {
