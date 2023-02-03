@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 // import { HttpService } from '../../service/http.service';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl, FormArray } from '@angular/forms';
+import { RecipeServiceService } from '../../services/recipe-service.service';
 
 @Component({
   selector: 'app-navbar',
@@ -28,7 +29,7 @@ export class NavbarComponent implements OnInit {
   chosenRecipe: Array<any> = [];
 
   constructor(
-    // private http: HttpService,
+     private service:RecipeServiceService,
     private router: Router
   ) {
     this.recipeForm = new FormGroup({
@@ -62,20 +63,38 @@ type:any;
     this.toDisplay = category?category:recipeType;
     this.recipes = this.Recipes.filter(recipe => recipe.selectedList.indexOf(category) != -1 ||  recipe.type === recipeType);
     this.toDisplay;
-    // this.getRecipe();
+     this.getRecipe();
   }
 
-  // getRecipe() {
-  //   this.http.getRecipeList().subscribe(
-  //     (recipe: any) => this.Recipes = recipe,
+    getRecipe() {
+      this.service.getRecipeList().subscribe(
+        (recipe: any) => this.Recipes = recipe,
 
-  //     (err) => console.log(err)
-  //   )
+        (err) => console.log(err)
+      )
 
-  // }
+    }
+
+ showSoupOnly(){
+   this.toDisplay='soup';
+   this.recipes = this.Recipes.filter(recipe=>recipe.type==='soup');
+   this.getRecipe();
+ }
+ allSelectedList = ['Diab', 'Traditional', 'Vegan', 'Vegetarian', 'Other','Canning'];
+
+
+  showOnlyDiab( ){
+    this.toDisplay=  ['Diab'];
+ 
+
+   this.recipes = this.Recipes.filter(recipe => recipe.category.selectedList[""]===["Diab"]);
+   console.log(this.recipes)
+
+   this.getRecipe();
+
+ }
+ 
 
 
  
- 
-
 }

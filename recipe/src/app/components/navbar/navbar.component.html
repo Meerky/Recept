@@ -16,24 +16,24 @@
       <ul class="navbar-nav mr-auto">
   
         <li class="nav-item">
-          <a class="nav-link" href="#">Kezdőlap</a>
+          <a class="nav-link"   href="#"  >Kezdőlap</a>
         </li>
   
         <li class="nav-item">
-          <a class="nav-link" (click)="showByCategory('','soup')"  routerLink="diab" >Hagyományos</a>
+          <a class="nav-link"  >Hagyományos</a>
         </li>
         
         <li class="nav-item" >
-          <a class="nav-link" (click)="showByCategory('Diab','')" routerLink="diab">Diab</a>
+          <a class="nav-link" routerLink="card"  (click) ="showByCategory('Diab','')">Diab</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link"  routerLink="recipe-form2">Vegetáriánus</a>
+          <a class="nav-link"   >Vegetáriánus</a>
         <li class="nav-item">
-          <a class="nav-link" routerLink="vegan" href="vegan">Vegán</a>
+          <a class="nav-link" routerLink="card" href="vegan"  (click) ="showByCategory('','soup')">Vegán</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="menu-planner">Menü tervező</a>
+          <a class="nav-link" routerLink="card" (click)="showSoupOnly()">Menü tervező</a>
         </li>
       </ul>
     </div>
@@ -46,7 +46,7 @@
               <img [src]="recipe.imgUrl" alt="Egészséges tápláékozás">
               <div n class="text-folder">
                   <h4>{{recipe.name}}</h4>
-             name
+         
               </div>
               <button type="button"> <a (click)="chooseRecipe(recipe)">Tobább a recepthez .. </a></button>
           </div>

@@ -44,6 +44,7 @@ export class UpdateComponent implements OnInit {
       ]),
 
       selectedList: new FormArray([])
+      // gender: new FormControl('')
     })
    
   }
@@ -88,8 +89,8 @@ export class UpdateComponent implements OnInit {
         imgUrl: recipe.imgUrl,
         type: recipe.type,
         id: recipe.id,
-        selectedList: recipe.selectedList,
-        radio:recipe.radio
+        selectedList: recipe.selectedList
+        // gender:recipe.gender
       });
 
       const ingredientsControls = recipe.ingrediens.map((ingredient:any) => 

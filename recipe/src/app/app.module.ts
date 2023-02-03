@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RecipeForm2Component } from './components/recipe-form2/recipe-form2.component';
 import { ListComponent } from './components/list/list.component';
 import { UpdateComponent } from './components/update/update.component';
+import { HomeComponent } from './components/home/home.component';
+import { CardComponent } from './components/card/card.component';
  
 
 @NgModule({
@@ -17,7 +19,9 @@ import { UpdateComponent } from './components/update/update.component';
     NavbarComponent,
     RecipeForm2Component,
     ListComponent,
-    UpdateComponent
+    UpdateComponent,
+    HomeComponent,
+    CardComponent
  
   ],
   imports: [

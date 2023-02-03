@@ -39,7 +39,9 @@ export class RecipeForm2Component implements OnInit {
         this.fb.control(''),
       ]),
       selectedList: new FormArray([])
-    })
+      // gender: new FormControl('')
+    }) 
+   
   }
 
 

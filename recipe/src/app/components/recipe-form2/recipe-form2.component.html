@@ -51,10 +51,10 @@
 
 
 
-<div><label for=""> Category:</label>
+<div>       <label for="selectedList"> Category:</label>
         <div class="mb-3 form-check" formArrayName="selectedList"
             *ngFor="let selected of allSelectedList; let i = index">
-           
+     
             <input type="checkbox" class="check" id="selectedList" [formControlName]="i">
             <label class="" for="selectedList">
                 {{selected}}
@@ -64,6 +64,13 @@
         </div>
     </div>
 
+    <!-- <div    >
+        <p>
+            <input type="radio" value="male" formControlName="gender" id="gender"> Male
+            <input type="radio" value="female" formControlName="gender" id="gender"> Female
+         </p>
+         
+    </div> -->
      
         <button>Save </button>
         

@@ -1,7 +1,7 @@
 {
   "Recipes": [
     {
-      "name": "nan",
+      "name": "1diab",
       "imgUrl": "https://img-global.cpcdn.com/recipes/91b70c48e09ee13d/680x482cq70/karamellas-sajttorta-recept-foto.webp",
       "type": "soup",
       "ingrediens": [
@@ -11,12 +11,13 @@
         "reszeld meg a sajtot"
       ],
       "selectedList": [
-        "Diab"
+        "Diab",
+        "Canning"
       ],
       "id": 2
     },
     {
-      "name": "Kakós csiga",
+      "name": "2Kakós csiga",
       "imgUrl": "https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80",
       "type": "főzelékek",
       "id": 3,
@@ -33,7 +34,7 @@
       ]
     },
     {
-      "name": "Alma leves",
+      "name": "3Alma leves",
       "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "type": "canning",
       "id": 4,
@@ -52,21 +53,9 @@
         "A répát vágjuk apró kockára ételízesítős vízben főzzük meg."
       ]
     },
+    
     {
-      "name": "",
-      "imgUrl": "",
-      "type": "",
-      "ingrediens": [
-        ""
-      ],
-      "desctription": [
-        ""
-      ],
-      "selectedList": [],
-      "id": 5
-    },
-    {
-      "name": "Kakós csiga",
+      "name": "4Kakós csiga",
       "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "type": "vegetable-dish",
       "ingrediens": [
@@ -84,7 +73,7 @@
       "id": 6
     },
     {
-      "name": "Alma leves",
+      "name": "5Alma leves",
       "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "type": "soup",
       "ingrediens": [
@@ -97,6 +86,61 @@
         "Vegan"
       ],
       "id": 7
+    },
+    {
+      "name": "6Alma leves",
+      "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "type": "soup",
+      "ingrediens": [
+        "300 gramm alma"
+      ],
+      "desctription": [
+        "Pucold meg az almát"
+      ],
+      "selectedList": [
+        "Vegan",
+        "Vegetarian"
+      ],
+      "id": 8
+    },
+    {
+      "name": "7Rántott kudu",
+      "imgUrl": "https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80",
+      "type": "cake",
+      "id": 9,
+      "selectedList": [
+        "Diab",
+        "Traditional"
+      ],
+      "gender": "male",
+      "ingrediens": [
+        "300 gramm alma",
+        "alma",
+        "banán"
+      ],
+      "desctription": [
+        "A hagymát vagjuk apró kockára, az olajon pároljuk meg.",
+        "alma"
+      ]
+    },
+    {
+      "name": "8Répakrém leves",
+      "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "type": "canning",
+      "ingrediens": [
+        "300 gramm alma",
+        "2 db tojás",
+        "2 ek. olaj"
+      ],
+      "desctription": [
+        "Pucold meg az almát",
+        "vágd fel a hagymát"
+      ],
+      "selectedList": [
+        "Vegetarian",
+        "Other"
+      ],
+      "id": 10
     }
   ]
 }

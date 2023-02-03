@@ -12,11 +12,13 @@
     <tbody>
         <tr *ngFor="let recipe of Recipes; let i = index">
       <td>   {{recipe.name}}</td> 
+      
             <td>{{recipe.ingrediens}}</td>
             <td>{{recipe.desctription}}</td>
             <td>{{recipe.imgUrl}}</td>
             <td>{{recipe.type}}</td>
             <td>{{recipe.selectedList}}</td>
+            <!-- <td>{{recipe.gender}}</td> -->
             
             <td>
                 <button id="delete-button" (click)="deleteRecipe(recipe.id)">Delete</button>
