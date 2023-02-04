@@ -75,25 +75,20 @@ type:any;
 
     }
 
- showSoupOnly(){
-   this.toDisplay='soup';
-   this.recipes = this.Recipes.filter(recipe=>recipe.type==='soup');
+ showSoupOnly(type:any){
+   this.toDisplay=type?type:'';
+   this.recipes = this.Recipes.filter(recipe=>recipe.type.indexOf(type)!= -1 );
+   this.toDisplay;
    this.getRecipe();
  }
- allSelectedList = ['Diab', 'Traditional', 'Vegan', 'Vegetarian', 'Other','Canning'];
-
-
-  showOnlyDiab( ){
-    this.toDisplay=  ['Diab'];
  
 
-   this.recipes = this.Recipes.filter(recipe => recipe.category.selectedList[""]===["Diab"]);
-   console.log(this.recipes)
-
+showByCategory2(category:any ) {
+  this.toDisplay = category?category:"" ;
+  this.recipes = this.Recipes.filter(recipe => recipe.selectedList.indexOf(category) != -1  );
+  this.toDisplay;
    this.getRecipe();
-
- }
- 
+}
 
 
  
