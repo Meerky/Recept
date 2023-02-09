@@ -14,30 +14,14 @@
         "Diab",
         "Canning"
       ],
-      "id": 2
+      "id": 1
     },
-    {
-      "name": "2Kakós csiga",
-      "imgUrl": "https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80",
-      "type": "főzelékek",
-      "id": 3,
-      "selectedList": [
-        "Diab",
-        "Traditional",
-        "Vegan"
-      ],
-      "ingrediens": [
-        "200 gramm kelt list"
-      ],
-      "desctription": [
-        "Pucold meg az almát"
-      ]
-    },
+    
     {
       "name": "3Alma leves",
       "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "type": "canning",
-      "id": 4,
+      "type": "vegetable-dish",
+      "id": 2,
       "selectedList": [
         "Diab",
         "Traditional",
@@ -57,7 +41,7 @@
     {
       "name": "4Kakós csiga",
       "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "type": "vegetable-dish",
+      "type": "bread",
       "ingrediens": [
         "300 gramm alma",
         "150 gramm joghurt"
@@ -70,12 +54,12 @@
         "Other",
         "Canning"
       ],
-      "id": 6
+      "id": 3
     },
     {
       "name": "5Alma leves",
       "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "type": "soup",
+      "type": "meet",
       "ingrediens": [
         "300 gramm alma"
       ],
@@ -85,12 +69,12 @@
       "selectedList": [
         "Vegan"
       ],
-      "id": 7
+      "id": 4
     },
     {
       "name": "6Alma leves",
       "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "type": "soup",
+      "type": "cake",
       "ingrediens": [
         "300 gramm alma"
       ],
@@ -101,13 +85,13 @@
         "Vegan",
         "Vegetarian"
       ],
-      "id": 8
+      "id": 5
     },
     {
       "name": "7Rántott kudu",
       "imgUrl": "https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80",
-      "type": "cake",
-      "id": 9,
+      "type": "canning",
+      "id": 6,
       "selectedList": [
         "Diab",
         "Traditional"
@@ -122,25 +106,5 @@
         "A hagymát vagjuk apró kockára, az olajon pároljuk meg.",
         "alma"
       ]
-    },
-    {
-      "name": "8Répakrém leves",
-      "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      "type": "canning",
-      "ingrediens": [
-        "300 gramm alma",
-        "2 db tojás",
-        "2 ek. olaj"
-      ],
-      "desctription": [
-        "Pucold meg az almát",
-        "vágd fel a hagymát"
-      ],
-      "selectedList": [
-        "Vegetarian",
-        "Other"
-      ],
-      "id": 10
-    }
-  ]
+    } ]
 }

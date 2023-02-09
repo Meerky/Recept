@@ -1,12 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RecipeServiceService {
 BASE_URL='http://localhost:3000/Recipes'
+
+chosenRecipe:any = new Subject<any>();
+chosenType:any= new Subject<any>();
 
   constructor(private http:HttpClient) { }
 

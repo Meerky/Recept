@@ -11,6 +11,8 @@ import { ListComponent } from './components/list/list.component';
 import { UpdateComponent } from './components/update/update.component';
 import { HomeComponent } from './components/home/home.component';
 import { CardComponent } from './components/card/card.component';
+import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
+import { HeaderComponent } from './components/header/header.component';
  
 
 @NgModule({
@@ -21,7 +23,9 @@ import { CardComponent } from './components/card/card.component';
     ListComponent,
     UpdateComponent,
     HomeComponent,
-    CardComponent
+    CardComponent,
+    RecipeCardComponent,
+    HeaderComponent
  
   ],
   imports: [

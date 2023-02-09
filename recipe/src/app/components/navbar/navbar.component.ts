@@ -10,13 +10,13 @@ import { RecipeServiceService } from '../../services/recipe-service.service';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+/*---------------*/
   navbarOpen = false;
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
-
+/*----------------*/
   
  
   toDisplay: any;
@@ -45,14 +45,20 @@ export class NavbarComponent implements OnInit {
 type:any;
 
   ngOnInit(): void {
-    // this.getRecipe();
+     this.getRecipe();
 
   }
 
-  chooseRecipe = (type: any) => {
-    // this.http.chosenRecipe.next(type);
-    this.router.navigate(['try-card',type]);
-    // this.getRecipe()
+  chooseRecipeType= (type: any) => {
+     this.service.chosenRecipe.next(type);
+    this.router.navigate(['recipe-card',type]);
+     this.getRecipe()
+
+  }
+  chooseRecipe = (recipe: any) => {
+     this.service.chosenRecipe.next(recipe);
+    // this.router.navigate(['recipe-card',recipe]);
+     this.getRecipe()
 
   }
 
@@ -75,12 +81,12 @@ type:any;
 
     }
 
- showSoupOnly(type:any){
-   this.toDisplay=type?type:'';
-   this.recipes = this.Recipes.filter(recipe=>recipe.type.indexOf(type)!= -1 );
-   this.toDisplay;
-   this.getRecipe();
- }
+//  showSoupOnly(type:any){
+//    this.toDisplay=type?type:'soup';
+//    this.recipes = this.Recipes.filter(recipe=>recipe.type.indexOf(type)!= -1 );
+//    this.toDisplay;
+//    this.getRecipe();
+//  }
  
 
 showByCategory2(category:any ) {
@@ -88,8 +94,26 @@ showByCategory2(category:any ) {
   this.recipes = this.Recipes.filter(recipe => recipe.selectedList.indexOf(category) != -1  );
   this.toDisplay;
    this.getRecipe();
+  //  this.router.navigate(['card',category]);
 }
 
+showType(type:any){
+  this.toDisplay=type?type:'';
+  this.recipes = this.Recipes.filter(recipe=>recipe.type.indexOf(type)!= -1 );
+  this.toDisplay;
+  this.getRecipe();
+  this.ReadMore = !this.ReadMore; //not equal to condition
+    this.visible = !this.visible
+}
 
+ReadMore:boolean = true
+
+  //hiding info box
+  visible:boolean = false
+onclick()
+  {
+    this.ReadMore = !this.ReadMore; //not equal to condition
+    this.visible = !this.visible
+  }
  
 }

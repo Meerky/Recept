@@ -1,4 +1,63 @@
-.navbar{
-    border: 2px solid red;
-    // margin-bottom: 5%;
-} 
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Licorice&family=Moon+Dance&family=Rubik:wght@300&family=The+Nautigal&family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Licorice&family=Moon+Dance&family=Rubik:wght@300&family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Licorice&family=Moon+Dance&family=Quicksand&family=Rubik:wght@300&family=The+Nautigal&family=Vujahday+Script&display=swap');
+.navbar-brand{
+    color:#edc3d1;
+    padding-left:3%;
+    padding-right:3%;
+    font-size: 2rem;
+    font-family: Island Moments;
+    font-weight: bold;
+}
+li{
+    margin: 3px;
+}
+li .nav-link{
+    background-color: blue;
+    
+   
+    color: white;
+    
+}
+ 
+
+.post{
+    border:2px solid green;
+    margin:0 auto;
+  
+}
+.post-display{
+    margin: 2%;
+    background-color: burlywood;
+    border-radius:18rem 0 18rem 0;
+    padding: 2%;
+    border: 1px solid brown;
+    width: 40%;
+    // display: none;
+  
+}
+
+.container{
+    border:2px solid orange;
+    
+}
+img{
+    height:300px;
+    width: 200px;
+
+}
+.button-group{
+    margin:0 auto;
+}
+.nav-header{
+    background-color: oldlace;
+    min-height: 15rem;
+    height: auto;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../../../assets/header-photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+ 
+  
