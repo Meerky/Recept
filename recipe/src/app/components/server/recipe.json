@@ -16,7 +16,6 @@
       ],
       "id": 1
     },
-    
     {
       "name": "3Alma leves",
       "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
@@ -37,7 +36,6 @@
         "A répát vágjuk apró kockára ételízesítős vízben főzzük meg."
       ]
     },
-    
     {
       "name": "4Kakós csiga",
       "imgUrl": "https://images.unsplash.com/photo-1644751538474-a6ad28786dd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
@@ -106,5 +104,62 @@
         "A hagymát vagjuk apró kockára, az olajon pároljuk meg.",
         "alma"
       ]
-    } ]
+    },
+    {
+      "name": "Csicseriborsó leves",
+      "imgUrl":"assets/csicserileves.jpg  ",
+      "type": "soup",
+      "ingrediens": [
+        "150 gramm főtt csicseri borsó",
+        "100 gramm sárgarépa",
+        "50 gramm petrezselyem",
+        "50 gramm karalábé",
+        "50 gramm zeller",
+        "50 gramm vöröshagyma",
+        "10 gramm teljeskiőrlésű liszt",
+        "10 gramm olaj",
+        "só,bors,fokhagyma,indiai jellegű fűszerkeverék"
+      ],
+      "desctription": [
+        "A zöldségeket megpucoljuk, kockára vágjuk. enyhén sós vízbenfélig megőzzük.",
+        "A harmadát mixerrel pürésítjük.",
+        "A lisztből ás olajból rántást kászítünk, hozzáadjuk a leveshez.",
+        "Fűszerezzük.Fekengedjük annyi vizzel amilyen sűrűre szeretnénk. kb.1.2 leves lesz."
+      ],
+      "selectedList": [
+        "Diab",
+        "Vegan",
+        "Vegetarian"
+      ],
+      "id": 7
+    },
+    {
+      "name": "Csicseriborsó leves",
+      "imgUrl":  "assets/csicserileves.jpg",
+      "type": "soup",
+      "ingrediens": [
+        "150 gramm főtt csicseri borsó",
+        "100 gramm sárgarépa",
+        "50 gramm petrezselyem",
+        "50 gramm karalábé",
+        "50 gramm zeller",
+        "50 gramm vöröshagyma",
+        "10 gramm teljeskiőrlésű liszt",
+        "10 gramm olaj",
+        "só,bors,fokhagyma,indiai jellegű fűszerkeverék"
+      ],
+      "desctription": [
+        "A zöldségeket megpucoljuk, kockára vágjuk. enyhén sós vízbenfélig megőzzük.",
+        "A harmadát mixerrel pürésítjük.",
+        "A lisztből ás olajból rántást kászítünk, hozzáadjuk a leveshez.",
+        "Fűszerezzük.Fekengedjük annyi vizzel amilyen sűrűre szeretnénk. kb.1.2 leves lesz."
+      ],
+      "selectedList": [
+        "Diab",
+        "Traditional",
+        "Vegan"
+      ],
+      "id": 8
+    }
+  ]
 }

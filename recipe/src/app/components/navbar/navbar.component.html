@@ -60,12 +60,14 @@
       </div>
       </div>
     </div>
-   
-  <div class="container" *ngFor="let recipe of recipes ,let i=index">
-    <div class="first red">
-      <ng-container *ngIf="visible">
+   <!--
+  <div class="container" >
+    <h2 class="post-display" >{{toDisplay}}</h2>
+    <div class="first red" *ngFor="let recipe of recipes ,let i=index">
+  
+      <ng-container *ngIf="visible" >
  
-        <h2 class="post-display" >{{toDisplay}}</h2>
+    
       <img [src]="recipe.imgUrl" alt="Egészséges tápláékozás">
       <div n class="text-folder">
         <h4>{{recipe.name}}</h4>
@@ -77,6 +79,23 @@
     </div>
   </div>
    
+
+</section>
+--> 
+
+<h4 class="display">{{toDisplay}}</h4>
+<section class="post">
+  
+    <div class="container" *ngFor="let recipe of recipes ,let i=index">
+        <div class="first red">
+            <img [src]="recipe.imgUrl" alt="Egészséges tápláékozás">
+            <div n class="text-folder">
+                <h4>{{recipe.name}}</h4>
+           
+            </div>
+            <!-- <button type="button"> <a (click)="chooseRecipe(recipe)">Tobább a recepthez .. </a></button> -->
+        </div>
+    </div>
 
 </section>
  
