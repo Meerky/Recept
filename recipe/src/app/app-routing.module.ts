@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CardComponent } from './components/card/card.component';
 import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
 import { HeaderComponent } from './components/header/header.component';
+import { Card2Component } from './components/card2/card2.component';
 
 
 
@@ -17,6 +18,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'card', component: CardComponent },
+  { path: 'card2', component: Card2Component},
+  { path: 'card2/:id', component: Card2Component},
   { path: 'forms', component: RecipeForm2Component },
   { path: 'list', component: ListComponent },
   { path: 'update/:id', component: UpdateComponent },

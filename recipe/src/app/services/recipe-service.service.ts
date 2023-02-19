@@ -32,4 +32,7 @@ chosenType:any= new Subject<any>();
   getOneRecipe(id:any):Observable<Array<any>>{
     return this.http.get<Array<any>>(this.BASE_URL+'/'+id);
   }
+  sortRecipeList():Observable<Array<any>>{
+    return this.http.get<Array<any>>(this.BASE_URL);
+  }
 }

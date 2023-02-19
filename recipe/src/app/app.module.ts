@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CardComponent } from './components/card/card.component';
 import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
 import { HeaderComponent } from './components/header/header.component';
+import { Card2Component } from './components/card2/card2.component';
  
 
 @NgModule({
@@ -25,7 +26,8 @@ import { HeaderComponent } from './components/header/header.component';
     HomeComponent,
     CardComponent,
     RecipeCardComponent,
-    HeaderComponent
+    HeaderComponent,
+    Card2Component
  
   ],
   imports: [

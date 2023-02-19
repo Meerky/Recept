@@ -1,6 +1,7 @@
 section{
   position: absolute;
   width: 100%;
+  background-color: aliceblue;
 }
 form{
     border: 1px solid black;

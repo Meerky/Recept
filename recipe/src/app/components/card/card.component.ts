@@ -40,9 +40,10 @@ type:any;
 
  }
 
- chooseRecipe = (type: any) => {
-    this.service.chosenRecipe.next(type);
-   this.router.navigate(['try-card',type]);
+ chooseRecipe = (recipe: any /*type:any*/) => {
+    this.service.chosenRecipe.next(recipe);
+  //  this.router.navigate(['try-card',type]);
+  //  this.router.navigate(['card2',recipe.id]);
    this.getRecipe()
 
  }

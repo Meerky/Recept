@@ -107,7 +107,7 @@
     },
     {
       "name": "Csicseriborsó leves",
-      "imgUrl":"assets/csicserileves.jpg  ",
+      "imgUrl": "assets/csicserileves.jpg  ",
       "type": "soup",
       "ingrediens": [
         "150 gramm főtt csicseri borsó",
@@ -135,7 +135,7 @@
     },
     {
       "name": "Csicseriborsó leves",
-      "imgUrl":  "assets/csicserileves.jpg",
+      "imgUrl": "assets/csicserileves.jpg",
       "type": "soup",
       "ingrediens": [
         "150 gramm főtt csicseri borsó",
@@ -160,6 +160,27 @@
         "Vegan"
       ],
       "id": 8
-    }
+    },
+    {
+      "name": "Avokádós szendvics",
+      "imgUrl": "assets/avokadosszendvics.jpg",
+      "type": "bread",
+      "ingrediens": [
+        "40 grmm teljeskiőrlású kenyér",
+        "30 gramm vörösbabkrém",
+        "1/4 avokádó",
+        "fermentált répa"
+      ],
+      "desctription": [
+        "A kenyeret megkenjük a babkrémmel",
+        "Rátesszük a szeletelt avokádót és a répaszeleteket."
+      ],
+      "selectedList": [
+        "Diab",
+        "Vegan",
+        "Vegetarian"
+      ],
+      "id": 9
+    } 
   ]
 }

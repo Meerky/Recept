@@ -51,13 +51,13 @@ type:any;
 
   chooseRecipeType= (type: any) => {
      this.service.chosenRecipe.next(type);
-    this.router.navigate(['recipe-card',type]);
+    this.router.navigate(['card',type]);
      this.getRecipe()
 
   }
   chooseRecipe = (recipe: any) => {
      this.service.chosenRecipe.next(recipe);
-    // this.router.navigate(['recipe-card',recipe]);
+    this.router.navigate(['card2',recipe.id]);
      this.getRecipe()
 
   }
@@ -105,15 +105,33 @@ showType(type:any){
   this.ReadMore = !this.ReadMore; //not equal to condition
     this.visible = !this.visible
 }
-
-ReadMore:boolean = true
+/*-------------------------*/
+ReadMore:boolean = true;
 
   //hiding info box
   visible:boolean = false
 onclick()
   {
-    this.ReadMore = !this.ReadMore; //not equal to condition
+    this.ReadMore = !this.ReadMore;  
     this.visible = !this.visible
+
+    
+    this.sortRecipe()
   }
+/*-------------------------*/
+
+/**-----------tartalom jegyzék-------------- */
+  sortRecipe(){
+    this.service.sortRecipeList().subscribe(
+      (recipe:Array<any>)=>this.Recipes=recipe.sort(function(a:any,b:any):number{
+        
+        
+        return a.name.trim(' ').toUpperCase()>b.name.trim(' ').toUpperCase()?1:-1;
+      }),
+      
+     
+    )
+  }
+  /**˛---------------------- */
  
 }

@@ -9,6 +9,11 @@
     font-family: Island Moments;
     font-weight: bold;
 }
+main{
+    border: 2px solid brown;
+    position: absolute;
+    width: 100%;
+}
 li{
     margin: 3px;
 }
@@ -39,21 +44,63 @@ li .nav-link{
 
   
 }
- 
+.display{
+    margin-left:13% ;
+    background-color:#518a8d ;
+    color:#edc3d1 ;
+    font-weight: lighter;
+    padding-left: 2%;
+ border-radius:18rem 0 18rem 0 ;
+ text-align:center;
+    width: 40%;
+}
+.right{
+    border:2px solid greenyellow;
+    margin-right: 2%;
+   
+    width: 25%;
+    float: right;
+}
+.right h2{
+    margin-left: 10%;
+    margin-top: 10%;
 
-.container{
-    border:2px solid orange;
-    margin: 10% auto;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: minmax(150px,auto);
-    // position:absolute;
+}
+.note{
+    margin-left: 10%;
+     
+}
+.left{
+    border: 2px solid pink;
+    width: 73%;
+    float:left;
+}
+.post-button{
+    border:2px solid red;
+    position:inherit;
+}
+.post{
+
+    border:2px solid blueviolet;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 5%;
+    
  
     
 }
+.post{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+ 
 img{
+    background-size: cover;
     height:300px;
-    width: 200px;
+    width: 100%;
+    
 
 }
 .button-group{
@@ -70,18 +117,8 @@ img{
    
     
 }
- .display{
-     background-color: purple;
- }
+.first {
+    border:2px solid red;
+}
  
-.post {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.post {
-    display: grid;
-    /* grid-template-columns: 20% 20% 20% 20% 20% ; */
-    grid-template-columns: 25% 25% 25% 25% ;
-    /* grid-template-columns: 33% 33% 33% ; */
-}
+  
