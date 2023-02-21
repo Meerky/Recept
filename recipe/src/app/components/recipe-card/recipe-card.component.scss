@@ -1,177 +1,81 @@
-
-
-
-//  /* *************-MAIN,** GRID**********/
-//  .top-div{
-//     /* border: 1px solid red; */
-//     display: flex;
-//     justify-content: space-evenly;
- 
-// }
-// .btn-group{
-//    margin: 5% auto; 
-//    margin-bottom: 1%; 
-//    padding-left: 2%;
-
-
-// }
-// .btn-group button{
-//    padding:10px;
-// }
-// .display{
-//    margin-left:3% ;
-//    background-color:#518a8d ;
-//    color:#edc3d1 ;
-//    font-weight: lighter;
-//    padding-left: 2%;
-// border-radius:18rem 0 18rem 0 ;
-// text-align:center;
-//    width: 40%;
-// }
-// section{
-//    margin: 10% auto;
-//    display: grid;
-//    grid-template-columns: 100%;
-//    grid-template-rows: minmax(150px,auto);
-//    position:absolute;
-// }
-
-
-// .post{
-//    grid-column: 1/2;
-//    /* border: 1px solid green; */
-// margin:0 auto;
-// position: relative;
-
-
-// }
-// h2{
-//    height: 2rem;
-//    margin-top:1%;
-
-// }
-// p{
+header{
    
-//    margin-top: 5%;
-   
-// }
-// .select-btn{
-//    background-color:#518a8d;
-//    color:#edc3d1;
-//    font-size: 1rem;
-//    padding-top:5%;
-//    padding-bottom:5%;
-
-//   width: auto;
-//    text-align: center;
+    margin: 0 0;
+    left: -5%;
+    width: 100%;
+    position:relative;
+}
+header img{
+margin-top:-20%;
+position:relative;
+    height: 300px;
  
+    width: 100%;
+}
+section{
+    
+    margin: 2% auto;
+    width: 100%;
+}
 
-// }
-// button{
-//    background-color:#518a8d;
-//    color:#edc3d1;
-//    font-size: 1rem;
-//    padding-top:5%;
-//    padding-bottom:5%;
+.card-div{
+    /* border:1px solid black; */
+    background-color: #ececec;
+    margin: -10% 5%;
+    position:absolute;
+    width: 90%;
+}
+img-holder{
+    display: none;
+}
+img{
+    position: relative;
+    margin:0 5%;
 
-//    text-align: center;
-//    width: 100%;
-// }
-// button a{
-//    text-decoration: none;
-//    color:#edc3d1
-// }
-// .card-button{
-//    background-color:#518a8d;
-//    color:#edc3d1;
-//    font-size: 1rem;
-//    padding-top:5%;
-//    padding-bottom:5%;
+        
+        width: 90%;
+    
+}
+@media only screen and (max-width: 1000px) {
+    img{
+        display: block;
+        height: 0;
+        width: 0;
+    }
+    }
+@media only screen and (min-width: 1000px) {
+.left{
+    
+    float: left;
+    width: 35%;
+}
+.right{
+    border-left: 2px solid #edc3d1;
+    float: right;
+    width: 65%;
+}
 
-//    text-align: center;
-//    width: 100%;
-// }
 
-// /**************-Blog**Section**************/
+}
+h4{
+    margin-top:1%; 
+    margin-bottom: 2%;
+    margin-left: 4%;
+}
+h2{
+    margin-left: 2%;
+}
+ p{
+    margin-left:5% ;
+}
 
-//  div .first{
-//    min-height: 200px;
-//    width: 95%;
-//    margin:2% auto;
-//    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.5);
-//    border-radius: 0.3%;
- 
-// }
-
-// div img{
-//    display: block;
-//    height: 18rem;
-//    max-width: 100%;
-//    margin: 1% auto;
-//    border-radius: 0.3%;
-//    /* border: 2px solid blue; */
+.carousel-item 
+.active, 
+.carousel-item-right,
+.carousel-item-next 
+{
   
-// }
-// img{
-//    /* border: 2px solid red;  */
-//    max-height: 22rem;
-//    /* max-height: 500px; */
-//    width: 100%;
- 
-
-// }
-// .text-folder{
-//    text-align: center;
-//    height: 3%;
-  
-// }
-
-// /******** média********************/
-
-// @media only screen and (min-width: 750px) {
- 
-//    .post {
-//        display: grid;
-//        grid-template-columns: 50% 50%;
-//    }
-//    .post h3,
-//    .post p {
-//        font-size: 2vw;
-//    }
-   
-//    .img-wrapper {
-//        max-width: 50%;
-//        height: 11rem;
-//        position: static;
-//        left: auto;
-//        transform: none;
-//        flex: 35%;
-//        display: flex;
-//        flex-direction: row;
-//        justify-content: center;
-//    }
- 
- 
-  
-// }
-
-// @media only screen and (min-width: 1000px) {
-  
-//    .post {
-//        display: flex;
-//        flex-direction: row;
-//        flex-wrap: wrap;
-//    }
-//    .post {
-//        display: grid;
-//        /* grid-template-columns: 20% 20% 20% 20% 20% ; */
-//        grid-template-columns: 25% 25% 25% 25% ;
-//        /* grid-template-columns: 33% 33% 33% ; */
-//        border:2px solid red;
-//    }
-
-// }
-
-
-
-
+      display: flex !important;
+      flex-wrap: wrap
+    
+  }

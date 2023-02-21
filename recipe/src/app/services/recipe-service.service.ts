@@ -11,6 +11,8 @@ BASE_URL='http://localhost:3000/Recipes'
 chosenRecipe:any = new Subject<any>();
 chosenType:any= new Subject<any>();
 
+
+
   constructor(private http:HttpClient) { }
 
   saveNewRecipe(recipe:any):Observable<any>{
@@ -32,6 +34,12 @@ chosenType:any= new Subject<any>();
   getOneRecipe(id:any):Observable<Array<any>>{
     return this.http.get<Array<any>>(this.BASE_URL+'/'+id);
   }
+
+  getRecipeType(type:any):Observable<Array<any>>{
+    return this.http.get<Array<any>>(this.BASE_URL+'/'+type);
+  }
+
+
   sortRecipeList():Observable<Array<any>>{
     return this.http.get<Array<any>>(this.BASE_URL);
   }

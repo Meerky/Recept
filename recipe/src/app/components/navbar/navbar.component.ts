@@ -49,15 +49,15 @@ type:any;
 
   }
 
-  chooseRecipeType= (type: any) => {
-     this.service.chosenRecipe.next(type);
-    this.router.navigate(['card',type]);
+  chooseRecipeType= (recipe: any) => {
+     this.service.chosenRecipe.next(recipe);
+    this.router.navigate(['card',recipe.type]);
      this.getRecipe()
 
   }
   chooseRecipe = (recipe: any) => {
      this.service.chosenRecipe.next(recipe);
-    this.router.navigate(['card2',recipe.id]);
+    this.router.navigate(['recipe-card',recipe.id]);
      this.getRecipe()
 
   }
@@ -94,7 +94,7 @@ showByCategory2(category:any ) {
   this.recipes = this.Recipes.filter(recipe => recipe.selectedList.indexOf(category) != -1  );
   this.toDisplay;
    this.getRecipe();
-  //  this.router.navigate(['card',category]);
+      this.router.navigate(['card',category]);
 }
 
 showType(type:any){
@@ -102,8 +102,10 @@ showType(type:any){
   this.recipes = this.Recipes.filter(recipe=>recipe.type.indexOf(type)!= -1 );
   this.toDisplay;
   this.getRecipe();
+  // this.router.navigate(['card',type]);
   this.ReadMore = !this.ReadMore; //not equal to condition
     this.visible = !this.visible
+   
 }
 /*-------------------------*/
 ReadMore:boolean = true;

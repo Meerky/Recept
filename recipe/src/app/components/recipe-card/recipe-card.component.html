@@ -1,15 +1,52 @@
-<!-- 
-<h4>{{toDisplay}}</h4>
-<section class="post">
 
-    <div class="container" *ngFor="let recipe of recipes, let i=index">
-        <div class="first red">
-            <img [src]="recipe.imgUrl" alt="">
-            <h4>{{recipe.name}}</h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <header>
+    <img class="header-img" [src]="recipe.imgUrl" alt="">   
+   </header> -->
+
+
+    <section class="continer">
+
+        <div class="card-div">
+
+            <h2>{{recipe.name}}</h2>
+
+            <div class="left">
+                <h4>Hozzávalók</h4>
+                <p class="category">{{recipe.category}}</p>
+            
+                <ul *ngFor="let ing of recipe.ingrediens">
+                    <li>{{ing}}</li>
+                </ul>
+            </div>
+
+       
+        <div class="right">
+          
+            <div class="img-holder">
+            <img class="card-img" [src]="recipe.imgUrl" alt="">
         </div>
-        <button type="button"><a (click)="chooseRecipe(recipe)">Tovább a recepthez---</a></button>
+        <h4>Elkészítés</h4>
+            <div *ngFor="let desc of recipe.desctription">
+             
+                <p>{{desc}}</p>
+            </div>
+        </div>
+        
+        </div>
+    </section>
 
-    </div>
-</section>
+   
 
-  -->
+   
+</body>
+</html>
+  
